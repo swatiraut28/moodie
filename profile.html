@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Moodie</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/custom.css" rel="stylesheet" />
+        <!-- Import remixicon -->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+        <!-- Font Family -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>   
+     </head>
+    <body style="font-family:Poppins;">
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #520482;">
+            <div class="container px-5">
+                <a class="navbar-brand" href="#!"><img src="images/logo.png" width="31%"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Discover</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Sounds</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Social</a></li>
+                        <div class="topbar-divider d-none d-sm-block" style="border-right:1px solid #F3E3FD; opacity: 0.54;"></div>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="img-profile" src="images/user.png" width="25px"> &nbsp; Majid Lawrence</a>                            
+                            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Edit Profile</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">My Progress</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Mood Tracker</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Change Interests</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="index.html">Logout</a>
+                            </div>
+                        </li>
+                        <div class="topbar-divider d-none d-sm-block" style="border-right:1px solid #F3E3FD; opacity: 0.54;"></div>
+                        <li class="nav-item"><a class="nav-link" href="#!"><i class="ri-global-line"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <div class="container px-4 px-lg-5">
+            <!-- Heading Row-->
+            <div class="row gx-4 gx-lg-5 align-items-center my-5">
+                <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="images/bg2.png" alt="..." /></div>
+                <div class="col-lg-5">
+                    <h1 class="font-weight-light">Away from home?</h1>
+                    <br><p>The experience of studying in a foreign country can be challenging and overwhelming, especially for those who are far away from their families, friends, and support networks. 
+                    <br><br>International students may also face a range of difficulties, such as language barriers, cultural differences, financial constraints, and academic pressures, which can contribute to feelings of isolation, anxiety, and despair.</p>
+                </div>
+            </div>
+            
+            <!-- Call to Action-->
+            <div class="card text-white bg-secondary my-5 py-4 text-center" style="background: url(images/bg1.png);">
+                <div class ="container-fluid">
+                    <div class ="row">
+                        <div class ="col-md-2 col-sm-2"></div>
+                        <div class ="col-md-2 col-sm-2">
+                            <h2 class="justify-content-between">Hello Majid</h2>
+                        </div>
+                        <div class ="col-md-6 col-sm-6">
+                            <div class="input-group" style="background: #F3E3FD;color: black;border-radius: 15px; display: block;">
+                                <p id="p1" style="font-size: 20px; padding: 6px;" data-bs-toggle="modal" data-bs-target="#exampleModal">Select how are you feeling today?</p>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel" style="color:black">How are you feeling today?</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container parent">
+                                                <form>
+                                                    <div class="row">
+                                                        <div class='col text-center'>
+                                                            <input type="radio" name="feeling" id="img1" class="d-none imgbgchk" value="Happy">
+                                                            <label for="img1">
+                                                                <img src="images/happy.png" alt="Image 1">
+                                                                <div class="tick_container">
+                                                                    <div class="tick"><i class="ri-check-fill"></i></div>
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                        <div class='col text-center'>
+                                                            <input type="radio" name="feeling" id="img2" class="d-none imgbgchk" value="Sad">
+                                                            <label for="img2">
+                                                                <img src="images/sad.png" alt="Image 2">
+                                                                <div class="tick_container">
+                                                                    <div class="tick"><i class="ri-check-fill"></i></div>
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                        <div class='col text-center'>
+                                                            <input type="radio" name="feeling" id="img3" class="d-none imgbgchk" value="Homesick">
+                                                            <label for="img3">
+                                                                <img src="images/homesick.png" alt="Image 3">
+                                                                <div class="tick_container">
+                                                                    <div class="tick"><i class="ri-check-fill"></i></div>
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class='col text-center'>
+                                                            <input type="radio" name="feeling" id="img4" class="d-none imgbgchk" value="Bored">
+                                                            <label for="img4">
+                                                                <img src="images/bored.png" alt="Image 4">
+                                                                <div class="tick_container">
+                                                                    <div class="tick"><i class="ri-check-fill"></i></div>
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                        <div class='col text-center'>
+                                                            <input type="radio" name="feeling" id="img5" class="d-none imgbgchk" value="Unsure">
+                                                                <label for="img5">
+                                                                <img src="images/unsure.png" alt="Image 5">
+                                                                <div class="tick_container">
+                                                                    <div class="tick"><i class="ri-check-fill"></i></div>
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                        <div class='col text-center'>
+                                                            <input type="radio" name="feeling" id="img6" class="d-none imgbgchk" value="Anxious">
+                                                            <label for="img6">
+                                                                <img src="images/anxious.png" alt="Image 6">
+                                                                <div class="tick_container">
+                                                                    <div class="tick"><i class="ri-check-fill"></i></div>
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer" style="display: inline;">
+                                            <button type="submit" type="submit" class="btn" style="background-color: #520482; color: white;">Save</button>
+                                        </div>
+                                                </form>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Content Row-->
+
+            <div class="row gx-4 gx-lg-5">
+                <div class="col-md-4 mb-5">
+                    <div class="card h-100">
+                        <div class="box">
+                            <div class="img">
+                            <img class="card-img-top" src="images/card1.png" class="img-fluid" style="height: 250px;"></div>
+                            <div class="card-block" style="padding: 25px;">
+                                <h4 class="card-title">Suggested Groups</h4>
+                                <p class="card-text" style="font-size:16px;color:#A3A3A3">Social</p>
+                                <p class="card-text" style="margin-top: -10px;"><a href="#" style="text-decoration: none; color: #520482;">View All</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-5">
+                    <div class="card h-100">
+                        <div class="box">
+                            <div class="img"><img class="card-img-top" src="images/card2.png" style="height: 250px;"></div>
+                                <div class="card-block" style="padding: 25px;">
+                                <h4 class="card-title">Suggested Events</h4>
+                                <p class="card-text" style="font-size:16px;color:#A3A3A3">Social</p>
+                                <p class="card-text" style="margin-top: -10px;"><a href="#" style="text-decoration: none; color: #520482;">View All</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-5">
+                    <div class="card h-100">
+                        <div class="box">
+                            <div class="img"><img class="card-img-top" src="images/card3.png" style="height: 250px;"></div>
+                                <div class="card-block" style="padding: 25px;">
+                                    <h4 class="card-title">Soothing Sounds</h4>
+                                    <p class="card-text" style="font-size:16px;color:#A3A3A3">Social</p>
+                                    <p class="card-text" style="margin-top: -10px;"><a href="#" style="text-decoration: none; color: #520482;">View All</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row gx-4 gx-lg-5 align-items-center my-5" style="margin-top: 10px !important;">
+                    <div class="col-lg-5" style="margin-top:-30px;padding-bottom: 30px;">
+                        <h1 class="font-weight-light">You are not alone!</h1>
+                        <br>
+                        Depression is a serious mental health issue that can affect people from all walks of life, including international students. 
+                        <br><br>Moving to a new country, adjusting to a different culture, and dealing with academic and financial pressures can all contribute to feelings of isolation, anxiety, and hopelessness.    
+                    </div>
+                    <div class="col-lg-7">
+                        <iframe width="100%" height="300" src="https://www.youtube.com/embed/GfCWUX9gnDc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer-->
+            <footer class="py-2" style="background-color: #F9F9F9;">
+                <div class="container px-4 px-lg-5"><p class="m-0 text-black text-center">Copyrights@2023-24</p></div>
+            </footer>
+            <!-- Bootstrap core JS-->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+            <!-- Core theme JS-->
+            <script src="js/scripts.js"></script>
+            <script>
+                const queryParams = new URLSearchParams(window.location.search);
+                const feeling = queryParams.get('feeling');
+                if(feeling===null || feeling===""){
+                    console.log("feeling is null");
+                }
+                else{
+                image_url="images/"+feeling+"1.png"
+                console.log(image_url)
+                document.getElementById("p1").innerHTML = "You are feeling "+'<img width="30px" height="30px" src="'+image_url+'"> '+ feeling
+
+            }
+            </script>
+    </body>
+</html>
